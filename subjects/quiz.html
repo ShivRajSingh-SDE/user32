@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="png" href="../images/OSA - Copy.png" />
+    <title>Quiz on OSA</title>
+    <link rel="stylesheet" type="text/css" href="quizStyle.css" />
+    <script type="text/javascript" src="../script.js"></script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <div class="nav" id="nav">
+        <div id="learned-logo">
+          <a href="../index.html"
+            ><img src="../images/OSA - Copy.png" style="width: 120px"
+          /></a>
+        </div>
+        <div class="switch-tab" id="switch-tab" onclick="switchTAB()">
+          <img src="../images/icon/menu.png" />
+        </div>
+        <ul id="list-switch">
+          <li>
+            <a href="computer_courses.html"
+              ><img src="../images/courses/computer.png" class="icon" />Computer
+              Courses</a
+            >
+          </li>
+          <li>
+            <a href="computer_courses.html#data"
+              ><img src="../images/courses/data.png" class="icon" />Data
+              Structures</a
+            >
+          </li>
+          <li>
+            <a href="computer_courses.html#algo"
+              ><img src="../images/courses/algo.png" class="icon" />Algorithm</a
+            >
+          </li>
+          <li>
+            <a href="computer_courses.html#projects"
+              ><img
+                src="../images/courses/projects.png"
+                class="icon"
+              />Projects</a
+            >
+          </li>
+        </ul>
+        <div class="search" id="search-switch">
+          <input type="search" placeholder="Search" class="srch" /><button
+            id="srchbtn"
+          >
+            <img src="../images/icon/search.png" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN Heading of Page -->
+    <div class="title" id="title">
+      <span>Daily Quiz on OSA</span>
+      <div class="shortdesc">
+        <br />
+        <p>If you think education is expensive, try ignorance</p>
+      </div>
+      <button onclick="startquiz()">Start Now</button>
+    </div>
+
+    <div class="panel" id="panel">
+      <div class="left-side" id="left">
+        <ul>
+          <li onclick="quizt(1)">HOME</li>
+          <li onclick="quizt(2)">Python</li>
+        </ul>
+      </div>
+
+      <div class="right-side" id="right">
+        <div id="quiz-container">
+          <div id="f1"><div class="quiz-frame main-frame"></div></div>
+
+          <div id="f2">
+            <iframe
+              class="quiz-frame"
+              src="https://docs.google.com/forms/d/e/1FAIpQLScueRDCTfAlkM4_aXWgnXqUxfe3P2hy-zgOEXvgY-TjASxsvg/viewform?usp=sf_link"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Loading…</iframe
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../script.js"></script>
+  </body>
+</html>
